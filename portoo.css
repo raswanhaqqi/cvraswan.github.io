@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Noto+Serif+NP+Hmong:wght@500&family=Roboto:wght@400;500;700;900&family=Sedgwick+Ave+Display&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Roboto" sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 strong{
+    color: rgb(35, 46, 53);
+}
+
+p{
+    font-size: 16px;
+    line-height: 1.9rem;
+}
+
+p, span, label, input, textarea, li{
+    color: rgb(101, 109, 114);
+}
+
+a {
+   text-decoration: none; 
+}
+
+.container{
+   width: 1200px;
+   margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px){
+    .container{
+        width: 90%;
+    }
+}
+
+.nav{
+    display: flex;
+    justify-content:space-between;
+    padding: 32px 0;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 48px;
+}
+
+.ras{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li{
+    display: flex;
+    align-items: center;
+}
+
+.nav ul li a{
+    color: rgb(35, 46, 53);
+}
+
+
+.garis div{
+    width: 25px;
+    height: 2px;
+    background-color: black;
+    margin: 7px;
+    transition: all 0.3s;
+    z-index: 99;
+}
+
+.garis{
+    /* display: none; */
+    z-index: 99;
+    position: fixed;
+    top: 33px;
+    right: 35px;
+}
+
+#hero {
+    align-items: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-kanan{
+    display: flex;
+    justify-content: center;
+}
+
+.judul{
+    text-transform: uppercase;
+    letter-spacing: .5rem;
+    color: rgb(101, 109, 114);
+    position: relative;
+    padding-left: 50px;
+    width: fit-content;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.judul::before{
+    content: "";
+    height: 1px;
+    width: 25px;
+    background:rgb(101, 109, 114);
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 0;
+}
+
+.nama{
+    font-size: 3rem;
+    font-weight: 850;
+    margin: 0.5rem 0;
+}
+
+.nama span{
+    color: rgb(83, 104, 228);
+}
+
+.mainjudul{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+
+/* Service */
+
+#services{
+    background-color: rgb(248, 248, 255);
+    padding: 6rem 0;
+}
+
+.services .judul{
+    margin: 0 auto;
+}
+
+.services-title{
+    text-align: center;
+}
+
+.section-title{
+    margin: 1rem 0 4rem;
+    font-size: 2rem;
+}
+
+.grid-3{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+}
+
+.service{
+    padding: 3rem 2rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+}
+
+.service h4{
+    margin: 1.5rem 0;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.service-icon{
+    background: rgb(191, 192, 196);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 1rem;
+}
+
+.service-icon svg{
+    fill: black;
+}
+
+
+/* Portofolio */
+
+#portofolios{
+    padding: 3rem 2rem;
+}
+
+.portofolio{
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid rgb(226, 227, 229);
+}
+
+.portofolio-cover{
+    height: 250px;
+}
+
+.portofolio-cover img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.portofolio-info{
+    padding: 2rem 1.5rem;
+
+}
+
+.portofolio-title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.portofolio h4{
+    font-weight: 500px;
+    font-size: 1rem;
+}
+
+.portofolio-title a svg:hover{
+    fill: rgb(83, 104, 228);
+}
+
+.portofolio-title a svg{
+    transition: 0.2s ease-in-out;
+}
+
+/* Education & Skills*/
+
+#skills{
+    padding: 3rem 2rem;
+    background: rgb(248, 248, 255);
+}
+
+.skills-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.education {
+    display: flex;
+    gap: 2rem;
+}
+
+.education .line{
+    padding: 0 0.7rem;
+}
+
+.education .line div{
+    width: 2px;
+    height: 100%;
+    background: rgb(220, 219, 219);
+    position: relative;
+}
+
+.education-info p{
+    margin: 0.5rem 0 1.5rem;
+}
+
+.education-years {
+    margin-bottom: 3rem;
+}
+
+.education .line div:before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background:rgb(220, 219, 219) ;
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+}
+
+.skills-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1rem;
+}
+
+.skills-kanan ul{
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+/* Contact */
+
+#contact{
+    padding: 3rem 2rem;
+}
+
+.contact{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+}
+
+.contact-form div {
+    margin-bottom: 1.5rem;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.80rem 1.5rem;
+    font-family: "Roboto", sans-serif;
+    background: rgb(237, 235, 235);
+    border: 1px solid ;
+    border-radius: 3px;
+    resize: none;
+}
+
+/* Footer */
+
+footer{
+    padding: 4rem 0;
+    text-align: center;
+    background: rgb(248, 248, 255);;
+}
+
+.footer-icons{
+    margin-bottom: 1rem;
+}
+
+.footer-icons a{
+    margin: 0 0.5rem;
+}
+
+.footer-icons svg{
+    fill: #3e3f40;
+}
+
+.footer-icons svg :hover{
+    fill: black;
+}
+
+.contact-form input::placeholder, .contact-form textarea::placeholder{
+    color: #9d9fa1;
+}
+
+.contact-form input:focus, .contact-form textarea:focus{
+    outline: none;
+    border: 1px solid #7d7d7d;
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 0.80rem 1.5rem;
+    background-color: rgb(83, 104, 228);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover{
+    background: rgb(43, 61, 161);
+}
+
+.contact.item{
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.contact-item-icon{
+    background-color:rgb(191, 192, 196) ;
+    width: 53px;
+    height: 53px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-item-detail{
+    margin-bottom: 0.5rem;
+}
+
+.dark-mode {
+    background-color: black;
+    color: aliceblue;
+}
+

@@ -1,0 +1,16 @@
+@media screen and (max-width:1000px) {
+    p{
+        font-size: 0.9rem;
+        line-height: 2rem;
+    }
+
+    .grid-3{
+        gap: 1rem;
+    }
+
+    .skills-kanan ul li{
+        font-size: 0.9rem;
+    }
+} 
+
+
